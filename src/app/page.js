@@ -1,3 +1,7 @@
+'use client'
+
+import HelloButton from "../component/HelloButton.js"
+
 export default function Home() {
   return (
     <section
@@ -19,33 +23,7 @@ export default function Home() {
       >
         Welcome to my App
       </h1>
-      <HelloButton buttonText={"Fikri punya"} buttonText2={"i love you"} />
+      <HelloButton buttonText={"Fikri Punya"} buttonText2={"i love you"} />
     </section>
-  );
-}
-
-function HelloButton({ buttonText, buttonText2 }) {
-  return (
-    <>
-      <button
-        style={{
-          width: "240px",
-          height: "36px",
-        }}
-      >
-        {" "}
-        {buttonText}{" "}
-      </button>
-      <button
-        style={{
-          width: "240px",
-          height: "36px",
-          marginTop: "12px",
-        }}
-      >
-        {" "}
-        {buttonText2}{" "}
-      </button>
-    </>
   );
 }
